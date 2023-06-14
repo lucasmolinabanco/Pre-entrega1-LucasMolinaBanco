@@ -1,0 +1,538 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.grid-nosotros {
+  display: grid;
+  grid-template-areas: "header" "texto" "mapa" "footer";
+}
+
+.a-nosotros {
+  transition: all 1s;
+  font-size: small;
+  gap: 1px;
+  padding: 0%;
+  margin-top: 10px;
+}
+
+.a-nosotros:hover {
+  transform: translate(0%);
+  color: red;
+}
+
+.header-nosotros {
+  transition: all 1s;
+  grid-area: header;
+  background-color: rgba(2, 2, 34, 0.966);
+  color: white;
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+  gap: 5px;
+}
+
+.header-nosotros:hover {
+  transform: translate(0%);
+}
+
+.footer-nosotros {
+  transition: all 1s;
+  grid-area: footer;
+  background-color: rgba(2, 2, 34, 0.966);
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 160px;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-nosotros:hover {
+  transform: translate(0%);
+}
+
+.mapa-nosotros {
+  grid-area: mapa;
+  padding: 20px;
+}
+
+.texto-nosotros {
+  grid-area: texto;
+}
+
+ol, li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+@media (min-width: 600px) {
+  .a-nosotros {
+    font-size: x-large;
+    gap: 190px;
+  }
+  .grid-nosotros {
+    grid-template-areas: "header header" "mapa texto" "footer footer";
+  }
+  .mapa-nosotros {
+    text-align: center;
+  }
+  .texto-nosotros {
+    text-align: center;
+  }
+  .text-nosotros {
+    font-size: 30px;
+  }
+}
+.contacto-nav {
+  background-color: rgba(2, 2, 34, 0.966);
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  gap: 100px;
+}
+
+.Nav-link {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 255, 0.363);
+}
+
+header {
+  color: white;
+  background-color: rgba(2, 2, 34, 0.966);
+  height: 100px;
+  width: 100 px;
+  line-height: 100px;
+}
+
+body {
+  background: rgba(0, 0, 139, 0.514);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-image: url(/mi_repositorio/pages/imagenes/pexels-victor-freitas-841130\ \(3\).jpg);
+  background-size: cover;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+.piedepagina {
+  position: absolute;
+  bottom: 10px;
+  right: 550px;
+  display: flex;
+  color: white;
+  font-size: 20px;
+}
+
+.imagen {
+  right: 10px;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#titulo-formulario {
+  text-align: center;
+}
+
+#boton {
+  text-align: center;
+  padding: 15px;
+}
+
+h2 {
+  color: white;
+  position: relative;
+}
+
+#titulocontacto {
+  position: relative;
+  right: 220px;
+}
+
+#titulo-Fitco {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+#ayuda {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+
+.form-ayuda {
+  text-align: center;
+}
+
+#formulario-ayuda {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1, 100px);
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  color: red;
+}
+
+.header-index, .grid-nav {
+  transition: all 1s;
+  grid-column: 100vh;
+  background-color: rgba(2, 2, 34, 0.966);
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.header-index, .grid-nav:hover {
+  transform: translate(0%);
+}
+
+.titulo-index {
+  transition: all 1s;
+  position: relative;
+  text-align: center;
+}
+
+.titulo-index:hover {
+  transform: translate(0%);
+}
+
+.seccion-index {
+  text-align: center;
+  width: 300px;
+  font-size: small;
+}
+
+.ul-index {
+  transition: all 1s;
+  font-size: small;
+  text-decoration: none;
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  justify-content: start;
+  color: white;
+  width: 250vh;
+}
+
+ul {
+  transition: all 1s;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  padding: 20px;
+  gap: 80px;
+  justify-content: end;
+  color: white;
+  width: 250vh;
+}
+
+.ul:hover {
+  transform: translate(0%);
+  color: red;
+}
+
+.footer-index {
+  transition: all 1s;
+  width: 320px;
+  display: flex;
+  color: white;
+  font-size: larger;
+  height: 150px;
+  grid-column: 100vh;
+  background-color: rgba(2, 2, 34, 0.966);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-index:hover {
+  transform: translate(0%);
+}
+
+section {
+  width: 10vh;
+}
+
+.grid-nav {
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-index {
+    width: 210vh;
+    justify-content: space-evenly;
+    height: 181px;
+  }
+  iframe {
+    width: 650px;
+  }
+  .grid-nav, .h3-index, .ul-index {
+    font-size: x-large;
+    gap: 210px;
+    justify-content: start;
+  }
+  .seccion-index {
+    font-size: large;
+    display: flex;
+    padding: 5px;
+    width: 1200px;
+  }
+}
+.flex-container-ayuda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20p;
+}
+
+.ayuda-body {
+  background-size: cover;
+}
+
+.titulo-ayuda {
+  text-align: center;
+}
+
+.ayuda-container {
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-ayuda {
+  height: 50px;
+  width: 300px;
+}
+
+#ayuda {
+  text-align: end;
+}
+
+.ayuda-nav {
+  font-size: small;
+  background-color: rgba(2, 2, 34, 0.966);
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+}
+
+.text-ayuda-1 {
+  color: black;
+  height: 100px;
+}
+
+.footer-ayuda {
+  display: flex;
+  color: white;
+  font-size: larger;
+  height: 150px;
+  grid-column: 100vh;
+  background-color: rgba(2, 2, 34, 0.966);
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1100px) {
+  .text-ayuda-1 {
+    font-size: larger;
+    text-align: center;
+    width: 1300px;
+    color: white;
+  }
+  .text-ayuda {
+    width: 800px;
+  }
+  .ayuda-nav {
+    font-size: x-large;
+    gap: 210px;
+    width: 300vh;
+  }
+  .footer-ayuda {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .titulo-ayuda {
+    width: 1500px;
+  }
+  .footer-ayuda {
+    width: 210vh;
+    justify-content: center;
+  }
+}
+.flex-container-rutina {
+  width: 320px;
+}
+
+.rutina-nav {
+  font-size: small;
+  width: 320px;
+  background-color: rgba(2, 2, 34, 0.966);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Rutinas {
+  width: 290px;
+  margin: 5px;
+}
+
+.header-rutina {
+  width: 320px;
+  text-align: center;
+}
+
+.seccion-video {
+  size: 100px;
+}
+
+.titulo-entrenamientos {
+  text-align: end;
+}
+
+@media screen and (min-width: 1100px) {
+  .flex-container-rutina {
+    width: 1500px;
+  }
+  .rutina-nav {
+    width: 1500px;
+    justify-content: flex-start;
+    font-size: x-large;
+    gap: 190px;
+  }
+  .header-rutina {
+    width: 1500px;
+    text-align: center;
+  }
+  .Rutinas {
+    display: flex;
+    width: 1200px;
+    gap: 10px;
+  }
+}
+.footer-contacto {
+  transition: all 1s;
+  width: 320px;
+  display: flex;
+  color: white;
+  font-size: larger;
+  height: 150px;
+  background-color: rgba(2, 2, 34, 0.966);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contacto:hover {
+  transform: translate(0%);
+}
+
+.header-contacto {
+  transition: all 1s;
+  text-align: center;
+  width: 320px;
+}
+
+.header-contacto:hover {
+  transform: translate(0%);
+}
+
+#contacto-container {
+  transition: all 1s;
+  display: flex;
+}
+
+.contacto-nav-2 {
+  background-color: rgba(2, 2, 34, 0.966);
+  transition: all 1s;
+  font-size: small;
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  width: 320px;
+}
+
+.contacto-nav-2:hover {
+  transform: translate(0%);
+}
+
+.Contacto-Container {
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  color: white;
+  width: 400px;
+}
+
+.Contacto-mensaje {
+  color: white;
+  text-align: center;
+  width: 320px;
+}
+
+.boton-contacto {
+  text-align: center;
+  width: 320px;
+}
+
+.contacto-subtitulo {
+  text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+  .footer-contacto {
+    height: 200px;
+    width: 210vh;
+    justify-content: space-around;
+  }
+  .contacto-nav-2 {
+    font-size: x-large;
+    width: 205vh;
+    justify-content: flex-start;
+    gap: 210px;
+  }
+  .header-contacto {
+    width: 210vh;
+  }
+  .Contacto-Container {
+    width: 110vh;
+    justify-content: end;
+  }
+  .Contacto-mensaje {
+    width: 1300px;
+    text-align: center;
+  }
+  .boton-contacto {
+    width: 1300px;
+    text-align: center;
+  }
+  .contacto-titulo {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
